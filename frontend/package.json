@@ -20,8 +20,7 @@
     "react-router-dom": "^6.26.1",
     "zustand": "^4.5.5",
     "vite": "^5.4.1",
-    "@vitejs/plugin-react": "^4.3.1",
-    "nodemon": "^2.0.22"
+    "@vitejs/plugin-react": "^4.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
