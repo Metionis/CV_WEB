@@ -7,7 +7,7 @@ export default function Skills() {
     <div className="skills">
       <h3>Programming skills</h3>
       <div className="skills-items">
-        <h4>Javascripts, HTML, CSS</h4>
+        <h6>Javascripts, HTML, CSS</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -17,7 +17,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-items">
-        <h4>ReactJS, NextJS, Vite, TailwindCSS</h4>
+        <h6>ReactJS, NextJS, Vite, TailwindCSS</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -27,7 +27,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-items">
-        <h4>Python</h4>
+        <h6>Python</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -37,7 +37,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-items">
-        <h4>REST API, Express</h4>
+        <h6>REST API, Express</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -47,7 +47,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-items">
-        <h4>Figma</h4>
+        <h6>Figma</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -57,7 +57,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-items">
-        <h4>Machine Learning, Deep Learning</h4>
+        <h6>Machine Learning, Deep Learning</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -67,7 +67,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="skills-items">
-        <h4>MongoDB, MySQL, PostgreSQL</h4>
+        <h6>MongoDB, MySQL, PostgreSQL</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>

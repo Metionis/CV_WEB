@@ -7,7 +7,7 @@ export default function Languages() {
     <div className="languages">
       <h3>Languages</h3>
       <div className="language-item">
-        <h4>Vietnamese</h4>
+        <h6>Vietnamese</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -17,7 +17,7 @@ export default function Languages() {
         </div>
       </div>
       <div className="language-item">
-        <h4>English</h4>
+        <h6>English</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>
@@ -27,7 +27,7 @@ export default function Languages() {
         </div>
       </div>
       <div className="language-item">
-        <h4>Japanese</h4>
+        <h6>Japanese</h6>
         <div className="stars">
           <span className="star filled">&#9733;</span>
           <span className="star filled">&#9733;</span>

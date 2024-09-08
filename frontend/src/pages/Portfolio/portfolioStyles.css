@@ -1,0 +1,34 @@
+.project-detail {
+  position: relative; /* Ensure the container has a relative position */
+  padding-top: 3rem; /* Adjust padding to prevent overlap with the button */
+}
+
+.return-button {
+  position: absolute;
+  top: 1rem; /* Adjust as needed */
+  left: 1rem; /* Adjust as needed */
+  background-color: white; /* White background color */
+  color: black; /* Black text color */
+  padding: 0.5rem 1rem; /* Adjust padding as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+  border: 1px solid transparent; /* Initially, the border is transparent */
+  z-index: 1000; /* Ensure the button is above other content */
+  display: flex;
+  align-items: center;
+  transition: border-color 0.3s ease-in-out; /* Transition effect for border color */
+}
+
+.return-button i {
+  margin-right: 0.5rem; /* Add space between the icon and text */
+}
+
+.return-button:hover {
+  border-color: black; /* Change border color on hover */
+}
+
+.single-column-layout {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  gap: 2rem; /* Adjust space between components as needed */
+  margin-bottom: 100px; /* Add margin of 100px around the container */
+}
