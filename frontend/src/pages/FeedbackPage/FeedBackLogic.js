@@ -1,7 +1,5 @@
 // FeedbackForm.js
 import { useState } from 'react';
-import { ENV_VARS } from '../../../../backend/config/envVars';
-
 
 export const useFeedbackForm = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +21,7 @@ export const useFeedbackForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:${ENV_VARS.PORT}/api/feedback`, {
+      const response = await fetch(`http://localhost:5000/api/feedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
