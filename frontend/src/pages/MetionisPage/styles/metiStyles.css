@@ -1,0 +1,59 @@
+/* Flexbox for centering both horizontally and vertically */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 150vh;
+  padding: 2rem;
+  max-height: fit-content;
+}
+
+/* Responsive adjustments for larger screens */
+@media (min-width: 48rem) {
+  .container {
+    flex-direction: row;
+    max-height: 200vh; /* Adjust as needed */
+  }
+}
+
+/* Sidebar styles */
+.side-bar {
+  background-color: rgb(107, 114, 128);
+  width: 100%;
+  max-width: 37.5rem; /* 600px in rems */
+  padding: 1.25rem; /* 20px in rems */
+  text-align: left;
+  color: white;
+  min-height: 150vh;
+  max-height: 200vh;
+}
+
+/* Main content styles */
+.right-sides {
+  background-color: white;
+  width: 100%;
+  max-width: 37.5rem; /* 600px in rems */
+  padding: 1.25rem; /* 20px in rems */
+  text-align: left;
+  margin-top: 1.25rem; /* 20px in rems */
+  min-height: 150vh;
+  max-height: 200vh;
+}
+
+/* Remove top margin on larger screens */
+@media (min-width: 48rem) {
+  .right-sides {
+    margin-top: 0;
+    max-height: 200vh;
+  }
+}
+
+h3 {
+  font-size: 1.875rem; /* 30px in rems */
+}
+
+.name {
+  font-size: 3.75rem; /* 60px in rems */
+  font-weight: bold;
+}

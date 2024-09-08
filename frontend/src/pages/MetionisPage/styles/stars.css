@@ -1,0 +1,13 @@
+/* Star rating styles */
+.stars {
+  display: flex;
+}
+
+.star {
+  font-size: 20px;
+  color: #d3d3d3; /* Default grey color for empty stars */
+}
+
+.star.filled {
+  color: gold; /* Gold color for filled stars */
+}

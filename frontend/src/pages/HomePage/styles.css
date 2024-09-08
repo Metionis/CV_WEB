@@ -1,0 +1,83 @@
+/* Overall styling for the homepage */
+.homepage {
+  position: relative;
+  min-height: 100vh; /* Full viewport height */
+  background: linear-gradient(135deg, #1e3a8a, #60a5fa); /* Blue gradient background */
+  overflow: hidden; /* Prevent scrollbars caused by the blur effect */
+  width: 100%;
+}
+
+/* Navigation bar styling */
+.navigate {
+  display: flex;
+  justify-content: center; /* Center items horizontally by default */
+  align-items: center; /* Center items vertically */
+  position: fixed; /* Fix position to the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  padding: 10px; /* Padding around the navigation bar */
+  background-color: #ffffff; /* Background color */
+  border-bottom: 1px solid #ddd; /* Border at the bottom */
+  z-index: 1000; /* Ensure it stays on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+/* Navigation links styling */
+.navigate a {
+  text-decoration: none; /* Remove default underline from links */
+  color: #007bff; /* Set text color */
+  font-size: 30px; /* Font size for links */
+  margin: 0 15px; /* Spacing between links */
+}
+
+.navigate a:hover {
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+
+/* Responsive adjustments for navigation links */
+@media (max-width: 768px) {
+  .navigate {
+    flex-direction: column; /* Stack items vertically on small screens */
+    align-items: center; /* Center items horizontally */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .navigate a {
+    margin: 10px 0; /* Add vertical spacing between links */
+    font-size: 1.2rem; /* Adjust font size for readability */
+  }
+}
+
+/* Section styling */
+section {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  min-height: 100vh; /* Full viewport height */
+  padding-top: 60px; /* Space for the fixed navbar */
+  box-sizing: border-box; /* Include padding in the element's total width and height */
+}
+
+h1 {
+  font-size: 2rem; /* Adjust font size for better fit */
+  color: #333; /* Optional: Set text color */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Heading styling */
+.main-heading {
+  font-size: 5rem; /* Adjust font size for better fit */
+  color: #333; /* Optional: Set text color */
+  text-align: center; /* Center text horizontally */
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 5s ease-out, transform 5s ease-out;
+  
+}
+
+.homepage.show-heading .main-heading {
+  opacity: 1;
+  transform: translateY(0);
+}

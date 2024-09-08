@@ -1,0 +1,18 @@
+/* Languages section */
+.languages {
+  text-align: left;
+}
+
+.languages-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.language-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1 1 48%; /* Each language takes up 48% of the row, with 2% gap */
+  margin: 10px 0;
+}
