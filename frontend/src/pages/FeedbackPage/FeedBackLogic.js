@@ -19,7 +19,7 @@ export const useFeedbackForm = () => {
     });
   };
 
-  const apiURL = 'https://cv-web-mu5j.onrender.com/api/feedback';  // Local development URL
+  const apiURL = ENV_VARS.API_URL;  // Local development URL
 
   const handleSubmit = async (e) => {
     e.preventDefault();
