@@ -19,13 +19,11 @@ export const useFeedbackForm = () => {
     });
   };
 
-  const apiURL = ENV_VARS.API_URL;  // Local development URL
-
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch(apiURL, {
+      const response = await fetch(`http://localhost:${ENV_VARS.PORT}/api/feedback`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
