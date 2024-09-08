@@ -1,5 +1,7 @@
 // FeedbackForm.js
 import { useState } from 'react';
+import { ENV_VARS } from '../../../../backend/config/envVars';
+
 
 export const useFeedbackForm = () => {
   const [formData, setFormData] = useState({
@@ -17,11 +19,15 @@ export const useFeedbackForm = () => {
     });
   };
 
+  const apiURL = ENV_VARS.NODE_ENV === 'production'
+  ? 'https://cv-web-mu5j.onrender.com/api/feedback'  // Use your production API URL
+  : 'http://localhost:5000/api/feedback';  // Local development URL
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3000/api/feedback', {
+      const response = await fetch('http://localhost:5000/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
