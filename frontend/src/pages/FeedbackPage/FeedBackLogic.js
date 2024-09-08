@@ -19,9 +19,7 @@ export const useFeedbackForm = () => {
     });
   };
 
-  const apiURL = (ENV_VARS.NODE_ENV === 'production'
-  ? 'https://cv-web-mu5j.onrender.com/api/feedback'  // Use your production API URL
-  : `http://localhost:${ENV_VARS.PORT}/api/feedback`) || `http://localhost:${ENV_VARS.PORT}/api/feedback`;  // Local development URL
+  const apiURL = 'https://cv-web-mu5j.onrender.com/api/feedback';  // Local development URL
 
   const handleSubmit = async (e) => {
     e.preventDefault();
