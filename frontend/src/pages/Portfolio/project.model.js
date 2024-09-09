@@ -62,5 +62,29 @@ export const projects = [
     img: "DataScience5.png",
     sourceURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/Car_Price_Prediction/CarPrice_Assignment.csv",
     siteURL: "https://github.com/Metionis/Data-Analisis-Portfolio/tree/main/Car_Price_Prediction"
+  },
+  {
+    name: "CUSTOMER CHURN ANALYSIS",
+    date: "Did in 28/12/2023",
+    overview: "Using Python, Pandas, Numpy, Matplotlib, Machine Learning to predict the customer churn rate.",
+    img: "DataScience6.png",
+    sourceURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/Customer_churn/Customer-Churn-Records.csv",
+    siteURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/Customer_churn/Customer_churn.ipynb"
+  },
+  {
+    name: "IRIS DATASET MINING & PREDICTION",
+    date: "27/6/2023",
+    overview: "Using Python, Pandas, Numpy, Matplotlib, Machine Learning to predict the type of iris flower",
+    img: "DataScience7.png",
+    sourceURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/Iris_dataset_mining/iris_dataset.csv",
+    siteURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/Iris_dataset_mining/Iris_KNN.ipynb"
+  },
+  {
+    name: "STACKOVERFLOW WISHLIST",
+    date: "18/8/2023",
+    overview: "Using Python, Pandas, Numpy, Matplotlib to analyze the data.",
+    img: "DataScience8.png",
+    sourceURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/StackOverflow%20WishList/StackOverflow_visualize.ipynb",
+    siteURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/StackOverflow%20WishList/StackOverflow_visualize.ipynb"
   }
 ]

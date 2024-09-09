@@ -31,7 +31,7 @@ export default function PaginatedProjects() {
                 <h5 className="card-title">{project.name}</h5>
                 <p className="card-text">{project.overview}</p>
                 <a href={project.siteURL} className="btn btn-primary mb-2" target="_blank" rel="noopener noreferrer" style={{margin: '5px'}}>View Project</a>
-                <a href={project.sourceURL} className="btn btn-secondary" target="_blank" rel="noopener noreferrer">View Source Code</a>
+                <a href={project.sourceURL} className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{backgroundColor: 'blue'}}>View Source Code</a>
               </div>
             </div>
           </div>
@@ -41,7 +41,7 @@ export default function PaginatedProjects() {
       {/* Pagination Buttons */}
       <div className="d-flex justify-content-center">
         <nav>
-          <ul className="pagination">
+          <ul className="pagination flex-column" style={{margin: '10px'}}>
             {Array.from({ length: totalPages }, (_, index) => (
               <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
                 <button className="page-link" onClick={() => handlePageChange(index + 1)}>
