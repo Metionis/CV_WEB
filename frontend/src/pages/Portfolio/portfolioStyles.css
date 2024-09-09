@@ -27,26 +27,3 @@
   border-color: black;
 }
 
-.project-container {
-  display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
-  gap: 1rem; /* Space between items */
-  justify-content: center; /* Center items horizontally */
-  width: 100%; /* Full width of container */
-}
-
-.project-item {
-  flex: 1 1 calc(50% - 1rem); /* Two items per row */
-  background-color: #f8f9fa;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: auto; /* Adjust height as needed */
-  margin: 10;
-}
-
-@media (max-width: 768px) {
-  .project-item {
-    flex: 1 1 100%; /* Stack items vertically on small screens */
-  }
-}
