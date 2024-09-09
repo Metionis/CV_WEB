@@ -25,7 +25,6 @@ export default function ProjectDetail() {
           </svg>
           Return
         </Link>
-
         {/* Flexible grid layout */}
         <div className="project-container">
           <div className="project-item">

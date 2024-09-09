@@ -14,7 +14,7 @@ const MetionisPage = () => {
         <div className="side-bar">
           <div className="contact-container">
             <h3>Contact</h3>
-            <h5>Email: <a href="mailto:vanhaminhquan2406@gmail.com">vanhaminhquan2406@gmail.com</a></h5>
+            <h5>Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=vanhaminhquan2406@gmail.com">vanhaminhquan2406@gmail.com</a></h5>
             <h5>
               LinkedIn
               <a href="https://www.linkedin.com/in/quan-van-15a5b3248/" target="_blank" rel="noopener noreferrer" className="linkedin-icon-container">

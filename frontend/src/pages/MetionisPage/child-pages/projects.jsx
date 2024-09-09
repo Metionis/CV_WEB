@@ -7,7 +7,7 @@ export default function Projects() {
       <h3>Projects</h3>
       <p>
         You can go to <a href="https://github.com/Metionis" target="_blank" rel="noopener noreferrer">Github</a> or{' '}
-        <Link to="/projects">click here</Link>
+        <Link to="/projects">click here</Link> to have an overview all my projects.
       </p>
     </div>
   );

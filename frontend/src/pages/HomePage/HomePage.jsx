@@ -21,7 +21,7 @@ const HomePage = () => {
         <Link to="/projects">My Projects</Link>
       </div>
       <section>
-        <div>
+        <div className="main-heading-container">
           <h1 className="main-heading">WELCOME TO MY PORTFOLIO</h1>
         </div>
       </section>

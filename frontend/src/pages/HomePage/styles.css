@@ -3,7 +3,6 @@
   position: relative;
   min-height: 100vh; /* Full viewport height */
   background: linear-gradient(135deg, #1e3a8a, #60a5fa); /* Blue gradient background */
-  overflow: hidden; /* Prevent scrollbars caused by the blur effect */
   width: 100%;
 }
 
