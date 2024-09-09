@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import MetionisPage from "./pages/MetionisPage/MetionisPage";
 import Portfolio from "./pages/Portfolio/Portfolio";
 import Feedback from "./pages/FeedbackPage/Feedback";
+import PaginatedProjects from "./pages/Portfolio/PaginatedProjects";
 
 function App() {
   return (

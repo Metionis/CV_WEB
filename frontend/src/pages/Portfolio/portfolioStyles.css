@@ -1,0 +1,52 @@
+.project-detail {
+  position: relative;
+  padding-top: 3rem; /* Space for the return button */
+  padding-bottom: 3rem; /* Space for bottom padding */
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+}
+
+.return-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background-color: white;
+  color: black;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.return-button:hover {
+  border-color: black;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  gap: 1rem; /* Space between items */
+  justify-content: center; /* Center items horizontally */
+  width: 100%; /* Full width of container */
+}
+
+.project-item {
+  flex: 1 1 calc(50% - 1rem); /* Two items per row */
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto; /* Adjust height as needed */
+  margin: 10;
+}
+
+@media (max-width: 768px) {
+  .project-item {
+    flex: 1 1 100%; /* Stack items vertically on small screens */
+  }
+}
