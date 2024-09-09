@@ -1,77 +1,57 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./portfolioStyles.css";
+import { projects } from './project.model.js';
 
-import Project1 from './components/component.project1';
-import Project2 from './components/component.project2';
-import Project3 from './components/component.project3';
-import DataScience1 from './components/component.datascience1';
-import DataScience2 from './components/component.datascience2';
-import DataScience3 from './components/component.datascience3';
-import DataScience4 from './components/component.datascience4';
-
-// Array of all projects
-const allProjects = [
-  <Project1 key="1" />,
-  <Project2 key="2" />,
-  <Project3 key="3" />,
-  <DataScience1 key="4" />,
-  <DataScience2 key="5" />,
-  <DataScience3 key="6" />,
-  <DataScience4 key="7" />
-];
-
-const projectsPerPage = 5;
+const PROJECTS_PER_PAGE = 9;
 
 export default function PaginatedProjects() {
-  const { page } = useParams();
-  const currentPage = parseInt(page, 10) || 1;
+  const [currentPage, setCurrentPage] = useState(1); // Track the current page
 
-  // Calculate the start and end indices for slicing the projects array
-  const startIndex = (currentPage - 1) * projectsPerPage;
-  const endIndex = startIndex + projectsPerPage;
+  // Calculate the index range of projects for the current page
+  const indexOfLastProject = currentPage * PROJECTS_PER_PAGE;
+  const indexOfFirstProject = indexOfLastProject - PROJECTS_PER_PAGE;
+  const currentProjects = projects.slice(indexOfFirstProject, indexOfLastProject);
 
-  // Slice the projects array for the current page
-  const currentProjects = allProjects.slice(startIndex, endIndex);
+  // Calculate total pages needed
+  const totalPages = Math.ceil(projects.length / PROJECTS_PER_PAGE);
 
-  const totalPages = Math.ceil(allProjects.length / projectsPerPage);
+  const handlePageChange = (pageNumber) => {
+    setCurrentPage(pageNumber); // Update the current page
+  };
 
   return (
-    <section className="project-detail py-5">
-      <div className="container">
-        {/* Return Button */}
-        <Link to="/" className="btn return-button">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="me-2">
-            <path d="M6 8L2 12L6 16" />
-            <path d="M2 12H22" />
-          </svg>
-          Return
-        </Link>
-
-        {/* Projects Display */}
-        <div className="project-container">
-          {currentProjects.map((Project, index) => (
-            <div key={index} className="project-item">
-              {Project}
+    <div className="container">
+      <div className="row">
+        {currentProjects.map((project, index) => (
+          <div key={index} className="col-md-4 mb-4"> {/* 3 columns per row */}
+            <div className="card h-100" style={{ width: '100%', margin: '0 auto' }}>
+              <img className="card-img-top" src={project.img} alt={`${project.name} image`} />
+              <div className="card-body">
+                <h5 className="card-title">{project.name}</h5>
+                <p className="card-text">{project.overview}</p>
+                <a href={project.siteURL} className="btn btn-primary mb-2" target="_blank" rel="noopener noreferrer" style={{margin: '5px'}}>View Project</a>
+                <a href={project.sourceURL} className="btn btn-secondary" target="_blank" rel="noopener noreferrer" style={{backgroundColor: 'blue'}}>View Source Code</a>
+              </div>
             </div>
-          ))}
-        </div>
-
-        {/* Pagination Controls */}
-        <div className="pagination mt-4">
-          {currentPage > 1 && (
-            <Link to={`/projects/${currentPage - 1}`} className="btn btn-secondary me-2">
-              Previous
-            </Link>
-          )}
-          {currentPage < totalPages && (
-            <Link to={`/projects/${currentPage + 1}`} className="btn btn-secondary">
-              Next
-            </Link>
-          )}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+
+      {/* Pagination Buttons */}
+      <div className="d-flex justify-content-center">
+        <nav>
+          <ul className="pagination flex-column" style={{margin: '10px'}}>
+            {Array.from({ length: totalPages }, (_, index) => (
+              <li key={index} className={`page-item ${currentPage === index + 1 ? 'active' : ''}`}>
+                <button className="page-link" onClick={() => handlePageChange(index + 1)}>
+                  {index + 1}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </div>
   );
 }

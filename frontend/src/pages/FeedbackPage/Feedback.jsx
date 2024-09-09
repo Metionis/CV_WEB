@@ -21,7 +21,7 @@ export default function Feedback() {
           <input
             type="text"
             name="name"
-            placeholder='Type in your name or nickname'
+            placeholder='Your name/nickname'
             value={formData.name}
             onChange={handleChange}
             required
