@@ -114,8 +114,8 @@ export const projects = [
   {
     name: "SSH AES ENCRYPTION",
     date: "9/9/2024 - Still in development",
-    overview: "Using Python in oder to crerate encryption and descryption for SSH private key, also SSH public key. Then delete them, and store encrypted key file inside the folder in project. After called descryption method, begin descryption and move them back ~/.ssh path. In future will combine with Machine Learning to detect the error, attack in login logs or ssh logs, whenever catch any unnormal then call encryption."
-    img: ""
+    overview: "Using Python in oder to crerate encryption and descryption for SSH private key, also SSH public key. Then delete them, and store encrypted key file inside the folder in project. After called descryption method, begin descryption and move them back ~/.ssh path. In future will combine with Machine Learning to detect the error, attack in login logs or ssh logs, whenever catch any unnormal then call encryption.",
+    img: "",
     sourceURL: "https://github.com/Metionis/EncryptionSSH",
     siteURL: "https://github.com/Metionis/EncryptionSSH"
   }
