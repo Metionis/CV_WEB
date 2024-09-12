@@ -110,5 +110,13 @@ export const projects = [
     img: "",
     sourceURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/house_prices_mining_with_decision_tree_in_machine_learning/decision_tree_example.ipynb",
     siteURL: "https://github.com/Metionis/Data-Analisis-Portfolio/blob/main/house_prices_mining_with_decision_tree_in_machine_learning/decision_tree_example.ipynb"
+  }, 
+  {
+    name: "SSH AES ENCRYPTION",
+    date: "9/9/2024 - Still in development",
+    overview: "Using Python in oder to crerate encryption and descryption for SSH private key, also SSH public key. Then delete them, and store encrypted key file inside the folder in project. After called descryption method, begin descryption and move them back ~/.ssh path. In future will combine with Machine Learning to detect the error, attack in login logs or ssh logs, whenever catch any unnormal then call encryption."
+    img: ""
+    sourceURL: "https://github.com/Metionis/EncryptionSSH",
+    siteURL: "https://github.com/Metionis/EncryptionSSH"
   }
 ]
